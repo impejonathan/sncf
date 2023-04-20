@@ -3,11 +3,8 @@ import pandas as pd
 import plotly.express as px
 import sqlite3
 import numpy as np
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
-map_token = os.getenv('MAPBOX_TOKEN')
+map_token = 'pk.eyJ1Ijoicm9sYW1tc3MiLCJhIjoiY2xnNmlyMHdsMGRxdzNzcDhjY3Y2bWoyciJ9.kb2zdFya2CD7FVsT57Sg1g'
 connexion = sqlite3.connect("db_objets_trouves.db")
 px.set_mapbox_access_token(map_token)
 
